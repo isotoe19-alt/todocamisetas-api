@@ -1,0 +1,83 @@
+{
+  "info": {
+    "_postman_id": "4b7d22d0-974a-45b3-aeff-e5bf3f7805ac",
+    "name": "TodoCamisetas API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54143516",
+    "_collection_link": "https://go.postman.co/collection/54143516-4b7d22d0-974a-45b3-aeff-e5bf3f7805ac?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Precio Final - Cliente tdeportes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/todocamisetas-api/index.php/camisetas/1?cliente_id=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "todocamisetas-api",
+            "index.php",
+            "camisetas",
+            "1"
+          ],
+          "query": [
+            {
+              "key": "cliente_id",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Camiseta Nueva",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"sku\": \"ARG2026V\",\r\n  \"titulo\": \"Camiseta Argentina Alternativa\",\r\n  \"club\": \"Selección Argentina\",\r\n  \"pais\": \"Argentina\",\r\n  \"tipo\": \"Visita\",\r\n  \"color\": \"Azul\",\r\n  \"precio\": 52990,\r\n  \"precio_oferta\": 45000,\r\n  \"detalles\": \"Modelo alternativo tres estrellas\",\r\n  \"tallas\": [\"S\", \"M\", \"L\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/todocamisetas-api/index.php/camisetas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "todocamisetas-api",
+            "index.php",
+            "camisetas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Precio Final - Cliente 90minutos",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Precio Final - Cliente tdeportes",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
